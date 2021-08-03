@@ -5,6 +5,7 @@
   --contact-text-footer: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --background-color: #2F303A;
+
 }
 
 body {
@@ -116,24 +117,52 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 }
 
 .contact .list-style{
    margin-right: 50px;
+   
 }
  
 .contact .list-style:last-child {
   margin-right: 0;
 }
 
+.icon-envelope{
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.contact-mailto:hover .icon-envelope,
+.contact-mailto:focus .icon-envelope {
+  fill: var(--accent-color);
+}
+
 .contact-mailto {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--secondary-text-color);
+  
+}
+
+.icon-smartphone{
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.contact-call:hover .icon-smartphone,
+.contact-call:focus .icon-smartphone {
+  fill: var(--accent-color);
 }
 
 .contact-call {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--secondary-text-color);
+  
 }
 
 .contact-mailto:hover,
