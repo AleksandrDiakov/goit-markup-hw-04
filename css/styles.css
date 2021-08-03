@@ -131,7 +131,7 @@ header {
 
 .icon-envelope{
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .contact-mailto:hover .icon-envelope,
@@ -149,7 +149,7 @@ header {
 
 .icon-smartphone{
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .contact-call:hover .icon-smartphone,
@@ -162,7 +162,6 @@ header {
   align-items: center;
   text-decoration: none;
   color: var(--secondary-text-color);
-  
 }
 
 .contact-mailto:hover,
@@ -181,9 +180,17 @@ button {
 }
 
 .hero{
-  background-image: url(../images/Bg.jpg);
+  display: block;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+
 }
 .hero-wrapper{
   display: flex;
@@ -217,6 +224,8 @@ button {
   border-radius: 4px;
 }
 
+
+/* feature */
 .list{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -229,6 +238,7 @@ button {
   justify-content: space-between;
 }
 
+
 .list-description .list-style {
 margin-right: 30px;
 width: 270px;
@@ -236,6 +246,16 @@ width: 270px;
 
 .list-description .list-style:last-child {
   margin-right: 0;
+}
+
+.icon-feature{
+  display: flex;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .list-title {
