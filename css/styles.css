@@ -224,6 +224,12 @@ button {
   border-radius: 4px;
 }
 
+.hero-button:hover,
+.hero-button:focus{
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 
 /* feature */
 .list{
@@ -501,16 +507,26 @@ img {
   flex-wrap: wrap;
 }
 
-.gallary-list .list-style{
-  margin-bottom: 30px;
+.list-project{
+  margin-bottom: 30px;  
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
 }
 
-.gallary-list .list-style:nth-child(3n){
+.list-project:nth-child(3n){
   margin-right: 0;
 }  
 
-.gallary-list .list-style:nth-last-child(-n + 3){
+.list-project:nth-last-child(-n + 3){
   margin-bottom: 0;
+}
+
+.list-project:hover,
+.list-project:focus{
+  background: #FFFFFF;
+  /* border: 1px solid #EEEEEE; */
+  /* box-sizing: border-box; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .galary-link{
