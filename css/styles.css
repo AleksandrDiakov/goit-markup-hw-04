@@ -548,6 +548,10 @@ footer {
   padding: 60px 0;
 }
 
+.page-footer{
+  display: flex;
+}
+
  .footer-logo {
   font-family: Raleway;
   font-weight: bold;
@@ -604,3 +608,48 @@ footer {
 .footer-call:hover,
 .footer-call:focus {
   color: var(--accent-color);
+}
+
+.footer-join {
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+  
+.footer-icon {
+list-style: none;
+margin-right: 10px; 
+}
+
+.footer-icon:last-child {
+  margin-right: 0;
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--hero-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background: var(--accent-color);
+}
